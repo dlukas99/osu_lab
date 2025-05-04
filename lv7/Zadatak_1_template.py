@@ -3,7 +3,19 @@ import numpy as np
 from scipy.cluster.hierarchy import dendrogram
 from sklearn.datasets import make_blobs, make_circles, make_moons
 from sklearn.cluster import KMeans, AgglomerativeClustering
-
+'''Zadatak 7.5.1 Skripta zadatak_1.py sadrži funkciju generate_data koja služi za generiranje
+umjetnih podatkovnih primjera kako bi se demonstriralo grupiranje. Funkcija prima cijeli broj
+koji definira željeni broju uzoraka u skupu i cijeli broj od 1 do 5 koji definira na koji naˇcin ´ce
+se generirati podaci, a vra´ca generirani skup podataka u obliku numpy polja pri ˇcemu su prvi i
+drugi stupac vrijednosti prve odnosno druge ulazne veliˇcine za svaki podatak. Skripta generira
+500 podatkovnih primjera i prikazuje ih u obliku dijagrama raspršenja.
+1. Pokrenite skriptu. Prepoznajete li koliko ima grupa u generiranim podacima? Mijenjajte
+naˇcin generiranja podataka.
+2. Primijenite metodu K srednjih vrijednosti te ponovo prikažite primjere, ali svaki primjer
+obojite ovisno o njegovoj pripadnosti pojedinoj grupi. Nekoliko puta pokrenite programski
+kod. Mijenjate broj K. Što primje´cujete?
+3. Mijenjajte naˇcin definiranja umjetnih primjera te promatrajte rezultate grupiranja podataka
+(koristite optimalni broj grupa). Kako komentirate dobivene rezultate?'''
 
 def generate_data(n_samples, flagc):
     # 3 grupe
