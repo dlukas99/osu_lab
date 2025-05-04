@@ -8,6 +8,22 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import ConfusionMatrixDisplay, accuracy_score, precision_score, recall_score, confusion_matrix
 from sklearn.model_selection import train_test_split
 
+'''Zadatak 5.5.1 Skripta zadatak_1.py generira umjetni binarni klasifikacijski problem s dvije
+ulazne veliˇcine. Podaci su podijeljeni na skup za uˇcenje i skup za testiranje modela.
+a) Prikažite podatke za uˇcenje u x1−x2 ravnini matplotlib biblioteke pri ˇcemu podatke obojite
+s obzirom na klasu. Prikažite i podatke iz skupa za testiranje, ali za njih koristite drugi
+marker (npr. ’x’). Koristite funkciju scatter koja osim podataka prima i parametre c i
+cmap kojima je mogu´ce definirati boju svake klase.
+b) Izgradite model logistiˇcke regresije pomo´cu scikit-learn biblioteke na temelju skupa podataka
+za uˇcenje.
+c) Prona ¯ dite u atributima izgra ¯ denog modela parametre modela. Prikažite granicu odluke
+nauˇcenog modela u ravnini x1 −x2 zajedno s podacima za uˇcenje. Napomena: granica
+odluke u ravnini x1−x2 definirana je kao krivulja: θ0+θ1x1+θ2x2 = 0.
+d) Provedite klasifikaciju skupa podataka za testiranje pomoc´u izgrad¯enog modela logisticˇke
+regresije. Izraˇcunajte i prikažite matricu zabune na testnim podacima. Izraˇcunate toˇcnost,
+preciznost i odziv na skupu podataka za testiranje.
+e) Prikažite skup za testiranje u ravnini x1−x2. Zelenom bojom oznaˇcite dobro klasificirane
+primjere dok pogrešno klasificirane primjere oznaˇcite crnom bojom.'''
 
 X, y = make_classification(n_samples=200, n_features=2, n_redundant=0, n_informative=2,
                             random_state=213, n_clusters_per_class=1, class_sep=1)
