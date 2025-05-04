@@ -8,7 +8,7 @@ from sklearn.preprocessing import OneHotEncoder
 '''
 Zadatak 4.5.2 Na temelju rješenja prethodnog zadatka izradite model koji koristi i kategoriˇcku
 varijable „Fuel Type“ kao ulaznu veliˇcinu. Pri tome koristite 1-od-K kodiranje kategoriˇckih
-veliˇcina. Radi jednostavnosti nemojte skalirati ulazne veliˇcine. Komentirajte dobivene rezultate.
+velicina. Radi jednostavnosti nemojte skalirati ulazne veliˇcine. Komentirajte dobivene rezultate.
 Kolika je maksimalna pogreška u procjeni emisije C02 plinova u g/km? O kojem se modelu
 vozila radi?
 '''
