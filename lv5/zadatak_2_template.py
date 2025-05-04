@@ -6,6 +6,27 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import ConfusionMatrixDisplay, classification_report, confusion_matrix, accuracy_score
 from sklearn.model_selection import train_test_split
 
+
+'''Zadatak 5.5.2 Skripta zadatak_2.py uˇcitava podatkovni skup Palmer Penguins [1]. Ovaj
+podatkovni skup sadrži mjerenja provedena na tri razliˇcite vrste pingvina (’Adelie’, ’Chinstrap’,
+’Gentoo’) na tri razliˇcita otoka u podruˇcju Palmer Station, Antarktika. Vrsta pingvina
+odabrana je kao izlazna veliˇcina i pri tome su klase oznaˇcene s cjelobrojnim vrijednostima
+0, 1 i 2. Ulazne veliˇcine su duljina kljuna (’bill_length_mm’) i duljina peraje u mm (’flipper_
+length_mm’). Za vizualizaciju podatkovnih primjera i granice odluke u skripti je dostupna
+funkcija plot_decision_region.
+a) Pomo´cu stupˇcastog dijagrama prikažite koliko primjera postoji za svaku klasu (vrstu
+pingvina) u skupu podataka za uˇcenje i skupu podataka za testiranje. Koristite numpy
+funkciju unique.
+b) Izgradite model logistiˇcke regresije pomo´cu scikit-learn biblioteke na temelju skupa podataka
+za uˇcenje.
+c) Pronad¯ite u atributima izgrad¯enog modela parametre modela. Koja je razlika u odnosu na
+binarni klasifikacijski problem iz prvog zadatka?
+d) Pozovite funkciju plot_decision_region pri ˇcemu joj predajte podatke za uˇcenje i
+izgrad¯eni model logisticˇke regresije. Kako komentirate dobivene rezultate?
+e) Provedite klasifikaciju skupa podataka za testiranje pomoc´u izgrad¯enog modela logisticˇke
+regresije. Izraˇcunajte i prikažite matricu zabune na testnim podacima. Izraˇcunajte toˇcnost.
+Pomo´cu classification_report funkcije izraˇcunajte vrijednost ˇcetiri glavne metrike'''
+
 labels= {0:'Adelie', 1:'Chinstrap', 2:'Gentoo'}
 
 def plot_decision_regions(X, y, classifier, resolution=0.02):
