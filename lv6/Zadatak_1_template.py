@@ -135,6 +135,8 @@ plt.tight_layout()
 plt.show()
 
 #Zadatak2
+''''''Pomo´cu unakrsne validacije odredite optimalnu vrijednost hiperparametra K
+algoritma KNN za podatke iz Zadatka 1.''''''
 param_grid = {'n_neighbors':np.arange(1,31)}
 knn = KNeighborsClassifier()
 grid_search = GridSearchCV(knn, param_grid, cv=5, scoring='accuracy')
@@ -142,6 +144,10 @@ grid_search.fit(X_train_n, y_train)
 print(grid_search.best_params_['n_neighbors'])
 
 #Zadatak3
+'''Na podatke iz Zadatka 1 primijenite SVM model koji koristi RBF kernel funkciju
+te prikažite dobivenu granicu odluke. Mijenjajte vrijednost hiperparametra C i γ. Kako promjena
+ovih hiperparametara utjeˇce na granicu odluke te pogrešku na skupu podataka za testiranje?
+Mijenjajte tip kernela koji se koristi. Što primje´cujete?'''
 svm_rbf = svm.SVC(kernel='rbf', random_state=10)
 param_grid = {
     'C': [0.1, 1, 10, 100],
@@ -168,6 +174,8 @@ plt.tight_layout()
 plt.show()
 
 #Zadatak4
+'''Zadatak 6.5.4 Pomo´cu unakrsne validacije odredite optimalnu vrijednost hiperparametra C i γ
+algoritma SVM za problem iz Zadatka 1.'''
 param_grid = {
     'C' : [0.1, 1, 10, 100],
     'gamma' : [0.1, 0.01, 0.001],
