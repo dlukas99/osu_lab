@@ -1,4 +1,9 @@
 #imports
+Trebaš mi pomoći pri rješavanju ispita, slat ću ti zadatke jedan po jedan te ih rješavaj. Piši jednostavno odvajaj dijelove zadatka tako što zakomentiraš npr. #a). Također rješenja zadatak ćeš prokomentirati
+tek nako što ti ja
+kažem odnosno kad ti pošaljem sliku dijagrama. Započetak riješi mi ovaj zadatak:
+
+Možda ti ovaj kod može pomoći pri rješavanju, korisit stvari iz tog koda (logiku koda ako ju možeš uklpiti) (dijagrame, način ispisivanja značajki uzoraka, skaliranje i slične stvari koje se traže ako imaju koristi):
 import pandas as pd
 import numpy as np
 from sklearn.datasets import load_breast_cancer
@@ -68,9 +73,17 @@ plt.ylabel('Značajka', fontsize=14)
 plt.grid(axis='x', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.show()
+#####################################################################################################################################################33
 
 
+Dobio sam ovaj rezultat, ukratko mi prokomentiraj rezultat sažeto i jasno
 
+#####################################################################################################################################################33
+
+
+Sad riješi ovaj 2. zadatak:
+
+također možda ti ovaj kod može pomoći pri rješavanju te koristi logiku iz tog koda ako ju možeš uklopiti:
 #2. zadatak
 
 data = load_breast_cancer()
@@ -164,7 +177,10 @@ disp.plot()
 plt.title("Matrica zabune logisticke regresije")
 plt.show()
 
+#####################################################################################################################################################33
+Sad riješi ovaj 2. zadatak:
 
+također možda ti ovaj kod može pomoći pri rješavanju te koristi logiku iz tog koda ako ju možeš uklopiti:
 #3. zadatak
 
 data = load_breast_cancer()
